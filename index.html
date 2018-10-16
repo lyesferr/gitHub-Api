@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>My Github Favorites</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/bootstrap.css" rel="stylesheet">
+	
+	<!-- Local CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+</head>
+<body>
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col headertop">
+				<h1 class="display-4 titre">My Github Favorites</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col leftsection">
+				<div class="row">
+						
+       					<div class="search">
+							<input type="text" oninput="myFunctionInput()" class="form-control input-sm" id="myCompany" maxlength="64" placeholder="Search" />
+							<button type="submit" onclick="myFunction()" class="btn btn-primary btn-sm">Search</button>
+						</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<div class="col">
+								<h4>Name</h2>
+							</div>
+							<div class="col">
+								<h4>Language</h2>
+							</div>
+							<div class="col">
+								<h4>Latest tag</h2>
+							</div>
+							<div class="col">
+								<h4></h2>
+							</div>
+						</div>
+						<div class="row">
+								<div id="theContainer" class="col"></div>
+						</div>
+						
+						<script type="x-script" id="template">
+								
+										<div class="col">
+											<a class="auteurPoste linkUser">Ferrahi Lyes</a>
+										</div>
+										<div class="col">
+											<p class="languageOf">Language</p>
+										</div>
+										<div class="col">
+											<p class="tagOf">Latest tag</p>
+										</div>
+										<div class="col">
+											<span class="badge badge-secondary addOf">Add</span>
+											
+										</div>
+							
+						</script>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="col rightsection">
+
+					<div class="row">
+							<div class="col">
+								<div class="row">
+									<div class="col">
+										<h4>Name</h2>
+									</div>
+									<div class="col">
+										<h4>Language</h2>
+									</div>
+									<div class="col">
+										<h4>Latest tag</h2>
+									</div>
+									<div class="col">
+										<h4></h2>
+									</div>
+								</div>
+								<div class="row">
+										<div id="theContainer2" class="col"></div>
+								</div>
+								
+								<script type="x-script" id="template2">
+										
+												<div class="col">
+													<a class="btn-outline-success btn-light auteurPoste linkUser">--</a>
+												</div>
+												<div class="col">
+													<p class="languageOf">--</p>
+												</div>
+												<div class="col">
+													<p class="tagOf">--</p>
+												</div>
+												<div class="col">
+													<span class="badge badge-secondary delOf">Remove</span>
+												</div>
+									
+								</script>
+								
+							</div>
+						</div>
+
+			</div>
+		</div>
+		
+	</div>
+
+
+</body>
+</html>
